@@ -27,5 +27,8 @@
     <ClCompile Include="mouse_test2.c">
       <Filter>소스 파일\Mouse_Click</Filter>
     </ClCompile>
+    <ClCompile Include="FileName.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

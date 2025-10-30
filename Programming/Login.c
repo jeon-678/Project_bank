@@ -88,6 +88,7 @@ int main() {
             gotoxy(26 + count, 10);
         }
     }
+
     gotoxy(0, 17);
     printf("%s\n", jgj.id);
     printf("%s\n", jgj.pw);
