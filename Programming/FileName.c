@@ -1,12 +1,9 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <windows.h>
 
 int main() {
-	char s[256] = { 0 };
 
-	while (1) {
-		scanf("%s", s);
-	}
-	
+	printf("Hello World!");
+
 	return 0;
 }

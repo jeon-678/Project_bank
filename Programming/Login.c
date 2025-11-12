@@ -38,13 +38,18 @@ void draw_box(int x, int y, int width, int height) {
 }
 
 void screen() {
-    system("cls");
-    draw_box(10, 5, 50, 10);  // 박스 그리기
+    system("color 0f");
 
-    gotoxy(15, 8);
-    printf("ID       :");
+    system("cls");
+    draw_box(10, 2, 50, 15);  // 박스 그리기
+
+    gotoxy(30, 6);
+    printf("L O G I N");
 
     gotoxy(15, 10);
+    printf("ID       :");
+
+    gotoxy(15, 12);
     printf("Password :");
 
     gotoxy(0, 17); // 커서 아래로 이동 (박스 밑)
@@ -53,15 +58,15 @@ void screen() {
 int main() {
 
     USER jgj;
-    
+
     memset(jgj.pw, 0, sizeof(jgj.pw)); // 특정 배열만 0으로 초기화
 
     screen();
 
-    gotoxy(26, 8);
+    gotoxy(26, 10);
     (void)scanf("%s", jgj.id);
 
-    gotoxy(26, 10);
+    gotoxy(26, 12);
     int count = 0;
     char ch;
     char* p = &jgj.pw;
@@ -74,24 +79,29 @@ int main() {
             break;
         else if (ch == '\b') { // 백스페이스 구현
             *(p + --count) = ' ';
-            gotoxy(26 + count, 10);
+            gotoxy(26 + count, 12);
             printf(" ");
-            gotoxy(26 + count, 10);
+            gotoxy(26 + count, 12);
         }
         else { // 문자 입력시 *로 은닉
             *(p + count) = ch;
 
-            gotoxy(26 + count, 10);
+            gotoxy(26 + count, 12);
             printf("*");
 
             count++;
-            gotoxy(26 + count, 10);
+            gotoxy(26 + count, 12);
         }
     }
-
-    gotoxy(0, 17);
-    printf("%s\n", jgj.id);
-    printf("%s\n", jgj.pw);
+    if (jgj.id != "test" || jgj.pw != "tttest") {
+        gotoxy(0, 17);
+        printf("아이디 또는 비밀번호가 틀렸습니다.");
+    }
+    else {
+        gotoxy(0, 17);
+        printf("%s\n", jgj.id);
+        printf("%s\n", jgj.pw);
+    }
 
     return 0;
 }
