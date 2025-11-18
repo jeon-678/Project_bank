@@ -13,25 +13,72 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Mouse_Click">
-      <UniqueIdentifier>{cee1cdf5-2f60-4b07-ab0f-4501aabd5c8c}</UniqueIdentifier>
+    <Filter Include="소스 파일\class">
+      <UniqueIdentifier>{6850595c-6c8a-448f-91c7-1c2f69b3954b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\restart">
+      <UniqueIdentifier>{21fd5a7f-55d7-40ed-adf9-67d6ae90e1d4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Login.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="mouse_test1.c">
-      <Filter>소스 파일\Mouse_Click</Filter>
-    </ClCompile>
-    <ClCompile Include="mouse_test2.c">
-      <Filter>소스 파일\Mouse_Click</Filter>
+    <ClCompile Include="Mouse_Click.c">
+      <Filter>소스 파일\class</Filter>
     </ClCompile>
     <ClCompile Include="FileName.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class</Filter>
     </ClCompile>
     <ClCompile Include="main.c">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\class</Filter>
     </ClCompile>
+    <ClCompile Include="Mouse.c">
+      <Filter>소스 파일\class</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.c">
+      <Filter>소스 파일\class</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="main1.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="user.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="account.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="file_manager.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+    <ClCompile Include="transection.c">
+      <Filter>소스 파일\restart</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="user.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="account.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="transaction.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="file_manager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

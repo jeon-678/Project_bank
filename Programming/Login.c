@@ -1,11 +1,11 @@
 /*
-* 테스트 진행
+* 로그인 창 테스트 진행
 */
 
 #define _CRT_SECURE_NO_WARNINGS
+#include <conio.h>
 #include <stdio.h>
 #include <windows.h>
-#include <conio.h>
 
 typedef struct user {
     char id[64];
@@ -38,7 +38,6 @@ void draw_box(int x, int y, int width, int height) {
 }
 
 void screen() {
-    system("color 0f");
 
     system("cls");
     draw_box(10, 2, 50, 15);  // 박스 그리기
@@ -56,6 +55,17 @@ void screen() {
 }
 
 int main() {
+    char file_id[32];
+    char file_pw[32];
+    int found = 0;
+    
+    FILE* fp = NULL;
+    fp = fopen("User.txt", "r");
+    if (fp == NULL) {
+        gotoxy(0, 20);
+        printf("파일 열기 실패\n");
+        return 1;
+    }
 
     USER jgj;
 
@@ -65,6 +75,7 @@ int main() {
 
     gotoxy(26, 10);
     (void)scanf("%s", jgj.id);
+
 
     gotoxy(26, 12);
     int count = 0;
@@ -93,15 +104,21 @@ int main() {
             gotoxy(26 + count, 12);
         }
     }
-    if (jgj.id != "test" || jgj.pw != "tttest") {
-        gotoxy(0, 17);
-        printf("아이디 또는 비밀번호가 틀렸습니다.");
+    gotoxy(0, 20);
+    while (fscanf(fp, "%s %s", file_id, file_pw) != EOF) {
+        if (strcmp(jgj.id, file_id) == 0 && strcmp(jgj.pw, file_pw) == 0) {
+            found = 1;
+            break;
+        }
+    }
+    if (found) {
+        printf("로그인 성공\n");
     }
     else {
-        gotoxy(0, 17);
-        printf("%s\n", jgj.id);
-        printf("%s\n", jgj.pw);
+        printf("ID 또는 PW가 잘못되었습니다.\n");
     }
-
+    
+    fclose(fp);
+    
     return 0;
 }
