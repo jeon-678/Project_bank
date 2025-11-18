@@ -124,27 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="account.c" />
-    <ClCompile Include="FileName.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yes</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="file_manager.c" />
-    <ClCompile Include="Login.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yes</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="main.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yes</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="main1.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="menu.c" />
-    <ClCompile Include="Mouse.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yes</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Mouse_Click.c">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yes</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="transection.c" />
     <ClCompile Include="user.c" />
     <ClCompile Include="util.c" />

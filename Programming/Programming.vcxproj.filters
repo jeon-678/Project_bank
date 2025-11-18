@@ -13,29 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\class">
-      <UniqueIdentifier>{6850595c-6c8a-448f-91c7-1c2f69b3954b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\restart">
       <UniqueIdentifier>{21fd5a7f-55d7-40ed-adf9-67d6ae90e1d4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Mouse_Click.c">
-      <Filter>소스 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="FileName.c">
-      <Filter>소스 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="main.c">
-      <Filter>소스 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="Mouse.c">
-      <Filter>소스 파일\class</Filter>
-    </ClCompile>
-    <ClCompile Include="Login.c">
-      <Filter>소스 파일\class</Filter>
-    </ClCompile>
     <ClCompile Include="util.c">
       <Filter>소스 파일\restart</Filter>
     </ClCompile>
